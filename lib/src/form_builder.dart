@@ -132,7 +132,9 @@ class FormBuilderState extends State<FormBuilder> {
   }
 
   void unregisterField(String name, FormBuilderFieldState field) {
-    assert(_fields.containsKey(name));
+    if (_fields.containsKey(name)) {
+      assert(_fields.containsKey(name));
+    }
     // Only remove the field when it is the one registered.  It's possible that
     // the field is replaced (registerField is called twice for a given name)
     // before unregisterField is called for the name, so just emit a warning
