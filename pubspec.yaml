@@ -22,7 +22,7 @@ dependencies:
   flutter_colorpicker: ^0.3.4
   flutter_chips_input:
     git: 
-      url: git://github.com/rettechnologys/flutter_chips_input.git
+      url: https://github.com/rettechnologys/flutter_chips_input.git
       ref: master
   flutter_datetime_picker: ^1.4.0
   flutter_touch_spin: ^1.0.1
